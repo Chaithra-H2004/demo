@@ -26,4 +26,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker build -t ghcr.io/chaithra-h2004/demo:latest .
+          docker push ghcr.io/${{ github.repository }}:latest
